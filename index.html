@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratoire Formulaire et JavaScript</title>
+</head>
+<body>
+    <!-- Attention ; utilisation de style dans le fichier html fait perdre des points dans les TP! -->
+    <img src="https://i.pinimg.com/564x/6d/1e/2f/6d1e2ff4321a3656a26c2cdcee79fa8f.jpg" style="width: 25%; float: right;"> 
+
+    <h1>Laboratoire sur la validation des formulaires en JS</h1>
+    
+    <form name="formulaire" action="/soumission" method="post" onsubmit="return ValiderFormulaire()">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom">
+        <p id="nom-err"></p>
+        <br>
+        <label for="prenom">Prenom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prenom">
+        <p id="prenom-err"></p>
+        <br>
+        <label for="date-naissance">Date de naissance :</label>
+        <input type="text" id="date-naissance" name="date-naissance" placeholder="AAAA-MM-JJ">
+        <p id="date-naissance-err"></p>
+        <br>
+        <label for="code-permanent">Code permanent :</label>
+        <input type="text" id="code-permanent" name="code-permanent" placeholder="Votre code permanent">
+        <p id="code-permanent-err"></p>
+        <br>
+        <label for="genre">Genre :</label>
+        <input type="text" id="genre" name="genre" placeholder="F / M / A">
+        <p id="genre-err"></p>
+
+        <input type="submit" value="Soumettre">
+
+    </form>
+    <script src="script.js"></script>
+
+</body>
+</html>
